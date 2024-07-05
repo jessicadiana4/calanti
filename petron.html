@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>calantipayan</title>
+    <link rel="stylesheet" href="establish.css">
+
+    <style>
+        .slider {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+    padding: 50px;
+
+  }
+  
+  .slides {
+	display: flex;
+max-width: 99%;
+	max-height: 600px;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid black;
+  }
+  
+  .slides img {
+	width: 800px;
+	height: 600px;
+	height: auto;
+	display: none;
+	align-content: center;
+	padding-left: 0px;
+	
+  }
+  
+  .slides img:first-child {
+	display: block;
+  }
+  
+  button.prev, button.next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	border: none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  button.prev {
+	left: 0;
+  }
+  
+  button.next {
+	right: 0;
+  }
+  
+    </style>
+</head>
+<body style="background: rgb(152,202,207);
+background: linear-gradient(0deg, rgba(152,202,207,1) 0%, rgba(244,255,254,1) 100%); background-attachment: fixed;">
+    <div class="maim" style=" background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(images/7034a90a482c8770464e6bdb11e6aebd.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;">
+        <div class="navbar">
+            <div class="icon">
+            <h2 class="logo">Brgy. Calantipayan</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="population.html">POPULATION</a></li>
+                    <li><a href="official.html">OFFICIAL</a></li>
+                    <li><a href="establish.html">ESTABLISHMENTS</a></li>
+                </ul>
+            </div>
+            <h1 style="padding-top: 220px; padding-bottom: 50px; font-size: 50px; text-align: center; color: white;">Petron</h1>
+   
+
+            <div class="slider">
+                <div class="slides">
+                  <img src="images/petron.webp" alt="Image 1">
+                  <img src="images/petron2.webp" alt="Image 2">
+                  <img src="images/petron3.webp" alt="Image 3">
+                  <img src="images/'petron4.webp" alt="Image 2">
+                  <!-- Add more images as needed -->
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+              </div>
+              
+             
+              <script>
+                let slideIndex = 0;
+        
+        // Function to move slides forward or backward
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Function to display the current slide
+        function showSlides(n) {
+          let slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+        
+          if (n >= slides.length) {
+            slideIndex = 0; // Wrap around to the first slide
+          } else if (n < 0) {
+            slideIndex = slides.length - 1; // Wrap around to the last slide
+          }
+        
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex].style.display = "block";
+        }
+        
+              </script>
+              </body>
+              </html>

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: aquamarine;
+    font-size: 15px;
+    font-family: arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: aqua;
+}
+
+.services {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Styling for each service block */
+.service {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    flex: 1;
+    margin: 0 10px; /* Adjust margin between services */
+    text-align: center;
+}
+
+/* Styling for service titles */
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styling for service descriptions */
+.service p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Styling for the button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #0056b3; /* Darker shade of button color on hover */
+}
